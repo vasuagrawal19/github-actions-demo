@@ -33,5 +33,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, $person, $greeting. Welcome to the $Platform
+             echo This repo is ${{github.repository}}
+             echo The current user is ${{github.repository_owner}}
         env:
           greeting: Good morning!!
